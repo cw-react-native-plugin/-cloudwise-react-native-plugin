@@ -6,9 +6,9 @@ const logger_1 = require("./logger");
 const fileOperationHelper_1 = require("./fileOperationHelper");
 const pathsConstants_1 = require("./pathsConstants");
 const GRADLE_CONFIG_IDENTIFIER = "// AUTO - INSERTED";
-exports.GRADLE_DYNATRACE_FILE = "apply from: \"../node_modules/@cloudwise/react-native-plugin/files/cloudwise.gradle\"";
+exports.GRADLE_DYNATRACE_FILE = "apply from: \"../node_modules/react-native-plugin2/files/cloudwise.gradle\"";
 const GRADLE_BUILDSCRIPT_IDENTIFIER = "buildscript";
-exports.GRADLE_APPLY_BUILDSCRIPT = "apply from: \"../node_modules/@cloudwise/react-native-plugin/files/plugin.gradle\", to: buildscript";
+exports.GRADLE_APPLY_BUILDSCRIPT = "apply from: \"../node_modules/react-native-plugin2/files/plugin.gradle\", to: buildscript";
 function instrumentAndroidPlatform(pathToGradle, remove) {
     let path = fileOperationHelper_1.default.checkIfFileExistsSync(pathToGradle);
     if (!path.endsWith(".gradle")) {

@@ -107,7 +107,7 @@ Pod::Spec.new do |s|
 
   # --- Source Location ---------------------------------------------------------- #
   #
-  s.source       = { :http => "https://www.npmjs.com/package/@cloudwise/react-native-plugin" }
+  s.source       = { :http => "https://www.npmjs.com/package/react-native-plugin2" }
 
   # --- Dependencies ---------------------------------------------------------- #
   #
