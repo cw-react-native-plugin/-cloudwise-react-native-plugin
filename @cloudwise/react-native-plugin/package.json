@@ -52,7 +52,11 @@
         ]
     },
     "author": "Cloudwise",
-    "license": "Copyright (c) 2012-2020 Dynatrace LLC. All rights reserved.",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cw-react-native-plugin/-cloudwise-react-native-plugin.git"
+    },
     "dependencies": {
         "@babel/runtime": "^7.6.2",
         "if-env": "1.0.4",
