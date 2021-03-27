@@ -16,9 +16,9 @@ module.exports = (function () {
     logger_js_1.default.logMessageSync("Starting instrumentation of React Native application ..", logger_js_1.default.INFO);
     showVersionOfPlugin();
     let pathToConfig = pathsConstants_js_1.default.getConfigFilePath();
-    Logger_1.Logger.logDebug("pathToConfig: " + pathToConfig)
+    Logger_1.Logger.logDebug("pathToConfig: " + pathToConfig);
     let pathToGradle = pathsConstants_js_1.default.getAndroidGradleFile(pathsConstants_js_1.default.getAndroidFolder());
-    Logger_1.Logger.logDebug("pathToGradle: " + pathToGradle)
+    Logger_1.Logger.logDebug("pathToGradle: " + pathToGradle);
     let androidAvailable = true;
     let pathToPList = undefined;
     let iosAvailable = true;
