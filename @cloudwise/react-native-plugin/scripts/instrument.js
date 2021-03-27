@@ -2,6 +2,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const logger_js_1 = require("./logger.js");
+const Logger_1 = require("../lib/instrumentor/base/Logger")
 const config = require("./config.js");
 const android = require("./android.js");
 const fileOperationHelper_js_1 = require("./fileOperationHelper.js");
@@ -15,19 +16,28 @@ module.exports = (function () {
     logger_js_1.default.logMessageSync("Starting instrumentation of React Native application ..", logger_js_1.default.INFO);
     showVersionOfPlugin();
     let pathToConfig = pathsConstants_js_1.default.getConfigFilePath();
+    Logger_1.Logger.logDebug("pathToConfig: " + pathToConfig)
     let pathToGradle = pathsConstants_js_1.default.getAndroidGradleFile(pathsConstants_js_1.default.getAndroidFolder());
+    Logger_1.Logger.logDebug("pathToGradle: " + pathToGradle)
     let androidAvailable = true;
     let pathToPList = undefined;
     let iosAvailable = true;
     var argv = parseCommandLine(process.argv.slice(2));
+    Logger_1.Logger.logDebug("argv: " + argv)
     if (argv.config !== undefined) {
+        Logger_1.Logger.logDebug("argv.config: " + argv.config);
         pathToConfig = argv.config;
     }
     if (argv.gradle !== undefined) {
+        Logger_1.Logger.logDebug("argv.gradle: " + argv.gradle);
         pathToGradle = nodePath.resolve(argv.gradle);
+        Logger_1.Logger.logDebug("pathToGradle: " + pathToGradle);
         androidAvailable = isPlatformAvailable(pathToGradle, "Android");
+        Logger_1.Logger.logDebug("androidAvailable: " + androidAvailable);
     }
     else {
+        Logger_1.Logger.logDebug("androidAvailable2: " + androidAvailable);
+        Logger_1.Logger.logDebug("pathsConstants_js_1.default.getAndroidFolder(): " + pathsConstants_js_1.default.getAndroidFolder());
         androidAvailable = isPlatformAvailable(pathsConstants_js_1.default.getAndroidFolder(), "Android");
     }
     if (argv.plist !== undefined) {
