@@ -1,0 +1,129 @@
+{
+    "name": "@cloudwise/react-native-plugin2",
+    "version": "0.0.2",
+    "description": "This plugin gives you the ability to use the Cloudwise Mobile agent in your react native application.",
+    "main": "index.js",
+    "types": "typings/react-native-cloudwise.d.ts",
+    "keywords": [
+        "react-native",
+        "Cloudwise",
+        "mobile",
+        "android",
+        "ios",
+        "performance",
+        "monitoring"
+    ],
+    "rnpm": {
+        "plugin": "./command/command.js"
+    },
+    "scripts": {
+        "install": "if-env BUILD_PLUGIN=true && echo 'Skipping Install Script' || node ./scripts/install.js",
+        "uninstall": "node ./scripts/uninstall.js",
+        "test": "jest",
+        "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",
+        "tsc": "tsc"
+    },
+    "jest": {
+        "preset": "react-native",
+        "moduleDirectories": [
+            "node_modules"
+        ],
+        "unmockedModulePathPatterns": [
+            "node_modules"
+        ],
+        "modulePathIgnorePatterns": [
+            "<rootDir>/src",
+            "<rootDir>/tests/appium/",
+            "<rootDir>/tests/commandTestTmp",
+            "node_modules/react-native/local-cli"
+        ],
+        "transform": {
+            "^.+\\.(ts|tsx)$": "ts-jest"
+        },
+        "testPathIgnorePatterns": [
+            "<rootDir>/src",
+            "<rootDir>/tests/commandTestTmp"
+        ],
+        "transformIgnorePatterns": [
+            "node_modules/(?!(jest-)?react-native)"
+        ],
+        "setupFiles": [
+            "<rootDir>/tests/setup/setup.js"
+        ]
+    },
+    "author": "Cloudwise",
+    "license": "Copyright (c) 2012-2020 Dynatrace LLC. All rights reserved.",
+    "dependencies": {
+        "@babel/runtime": "^7.6.2",
+        "if-env": "1.0.4",
+        "jscodeshift": "^0.11.0",
+        "plist": "3.0.1",
+        "proxy-polyfill": "^0.3.0",
+        "semver": "^7.1.3"
+    },
+    "homepage": "https://www.cloudwise.com/",
+    "peerDependencies": {
+        "react-native": ">=0.59.0",
+        "react": ">=16.8.0",
+        "@babel/parser": ">=7.4.4",
+        "@react-native-community/picker": ">=1.0.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.7.4",
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/plugin-proposal-nullish-coalescing-operator": "^7.8.3",
+        "@babel/plugin-proposal-optional-chaining": "^7.8.3",
+        "@babel/plugin-transform-flow-strip-types": "^7.8.3",
+        "@babel/plugin-transform-runtime": "^7.12.1",
+        "@babel/preset-env": "^7.4.4",
+        "@babel/preset-react": "^7.8.3",
+        "@testing-library/react-native": "^7.0.2",
+        "@types/jest": "^24.0.23",
+        "@types/jscodeshift": "^0.7.0",
+        "@types/libxmljs": "^0.18.3",
+        "@types/node": "^12.7.9",
+        "@types/plist": "^3.0.2",
+        "@types/react-native": "^0.63.32",
+        "@types/semver": "^6.0.2",
+        "@types/shelljs": "^0.8.8",
+        "@types/uglify-js": "^3.9.3",
+        "appium": "^1.18.2",
+        "appium-doctor": "^1.15.3",
+        "compressing": "^1.5.1",
+        "jest": "^25.2.3",
+        "jest-each": "^25.2.3",
+        "react-test-renderer": "16.11.0",
+        "shelljs": "^0.8.3",
+        "ts-jest": "^26.3.0",
+        "typescript": "^3.8.2",
+        "uglify-js": "^3.6.0",
+        "wd": "^1.13.0"
+    },
+    "files": [
+        "command/command.js",
+        "android/build.gradle",
+        "android/src/main/**/*",
+        "ios/**/*",
+        "files/*",
+        "lib/instrumentor/base/*.js",
+        "lib/instrumentor/base/model/*.js",
+        "lib/instrumentor/base/configuration/*.js",
+        "lib/instrumentor/base/interface/*.js",
+        "lib/instrumentor/base/util/*.js",
+        "lib/instrumentor/model/*.js",
+        "lib/instrumentor/parser/*.js",
+        "lib/instrumentor/cloudwise-instrumentation.js",
+        "lib/*.js",
+        "lib/community/*.js",
+        "lib/react-native/*.js",
+        "lib/react/*.js",
+        "lib/metro2/*.js",
+        "react-native.config.js",
+        "react-native-cloudwise.js",
+        "react-native-cloudwise.podspec",
+        "README.md",
+        "scripts/*",
+        "typings/*",
+        "package.json"
+    ]
+}

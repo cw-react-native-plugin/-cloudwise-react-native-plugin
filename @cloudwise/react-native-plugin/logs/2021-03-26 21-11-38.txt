@@ -1,0 +1,9 @@
+#WARN  [2021-03-26 20:18:19]: Could not find package.json - please remove instrumentCloudwise script manually!
+#ERROR [2021-03-26 20:18:19]: Removal of Gradle modification didnt work!
+#ERROR [2021-03-26 20:18:19]: Removal of PList modification didnt work!
+#INFO  [2021-03-26 21:11:38]: Starting instrumentation of React Native application ..
+#INFO  [2021-03-26 21:11:38]: Cloudwise React Native Plugin - Version 0.0.2
+#WARN  [2021-03-26 21:11:38]: Android Location doesn't exist - Skip Android instrumentation and configuration.
+#WARN  [2021-03-26 21:11:38]: iOS Location doesn't exist - Skip iOS instrumentation and configuration.
+#WARN  [2021-03-26 21:11:38]: Both Android and iOS Folder are not available - Skip instrumentation.
+#INFO  [2021-03-26 21:11:38]: Finished instrumentation of React Native application ..

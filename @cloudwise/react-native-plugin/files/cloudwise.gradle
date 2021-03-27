@@ -1,0 +1,16 @@
+apply plugin: 'com.cloudwise.instrumentation'
+
+// AUTO - INSERTED
+
+        cloudwise {
+            configurations {
+                defaultConfig {
+                    autoStart {
+                        applicationId 'da98cb40-1a96-4764-b17b-b298c3111c86'
+                        beaconUrl 'https://bf71365vhb.bf.cloudwise.com/mbeacon'
+                    }
+                }
+            }
+        }
+
+// AUTO - INSERTED

@@ -1,0 +1,10 @@
+#WARN  [2021-03-26 18:13:32]: Could not find package.json - please add instrumentCloudwise script manually!
+#INFO  [2021-03-26 18:13:32]: Created cloudwise.config.js - Please insert your configuration and update the file!
+#WARN  [2021-03-26 18:33:58]: Could not find package.json - please add instrumentCloudwise script manually!
+#INFO  [2021-03-26 18:33:58]: Created cloudwise.config.js - Please insert your configuration and update the file!
+#INFO  [2021-03-26 19:31:58]: Starting instrumentation of React Native application ..
+#INFO  [2021-03-26 19:31:58]: Cloudwise React Native Plugin - Version 0.0.1
+#WARN  [2021-03-26 19:31:58]: Android Location doesn't exist - Skip Android instrumentation and configuration.
+#WARN  [2021-03-26 19:31:58]: iOS Location doesn't exist - Skip iOS instrumentation and configuration.
+#WARN  [2021-03-26 19:31:58]: Both Android and iOS Folder are not available - Skip instrumentation.
+#INFO  [2021-03-26 19:31:58]: Finished instrumentation of React Native application ..
