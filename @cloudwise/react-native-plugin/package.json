@@ -1,6 +1,6 @@
 {
     "name": "react-native-plugin2",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "This plugin gives you the ability to use the Cloudwise Mobile agent in your react native application.",
     "main": "index.js",
     "types": "typings/react-native-cloudwise.d.ts",
